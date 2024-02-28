@@ -12,3 +12,51 @@ a {
 img {
 	max-width: 100%;
 }
+.container {
+	max-width: 1640px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+body{
+	background-color: #1818ab;
+}
+
+.d-flex{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.title-color{
+	color: white;
+}
+.parent {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: minmax(200px, auto);
+	grid-template-rows: 200px 200px 200px 200px 200px;
+	gap: 35px;
+}
+.box{
+	background-color: white;
+	color: #1818ab;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.box:nth-child(1) {
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+	/* grid-template-areas:
+		"header header"
+		"slider aside"
+		"slider aside"
+		"quiz aside"
+		"footer footer"; */
